@@ -1,0 +1,12 @@
+name: Meu primeiro pipeline
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  oi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dizer oi
+        run: echo "Olá, Gabriel! Seu pipeline tá funcionando 🎉"
